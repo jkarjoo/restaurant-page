@@ -1,0 +1,390 @@
+html,body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+body{
+    transition: 0.5s;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url(images/home.jpg) no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Libre Caslon Text', serif;
+    color: white;
+}
+
+/* Mobile Nav */
+.hamburger, .blkhamburger {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: none;
+    transition: 0.5s;
+}
+
+.hamburger {
+    background-image: url(images/whiteham.png);
+}
+
+.hamburger.active {
+    background-image: url(images/whitex.png);
+}
+
+.blkhamburger {
+    background-image: url(images/blkham.png);
+}
+
+.blkhamburger.active {
+    background-image: url(images/blackx.png);
+}
+
+/* Modal */
+
+.modal {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-contents {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+#content {
+    display: block;
+}
+
+#content.inactive {
+    display: none;
+}
+
+.nav {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    border-bottom: 1px solid #313131;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 5;
+}
+
+/* Hompage Nav Bar */
+.nav.home {
+    border: none;
+    color: white;
+    background-color: unset;
+}
+
+.title-container {
+    width: 100%;
+    display: flex;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.nav-tabs {
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.nav-tabs a {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* Nav Tab Margins adjusted for scroll bar */
+.nav-tabs.contact, .nav-tabs.menu {
+    margin-right: 25px;
+}
+
+
+.home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    width: 100vw;
+    color: white;
+}
+
+.bodytitle {
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.address {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+.view-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    max-width: 160px;
+    width: 160px;
+    border: 1.5px solid white;
+    padding: 10px 5px 10px 5px;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+.view-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Nav Tabs:Hover for both homepage & other pages */
+.nav-tabs.home a:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-tabs a:hover {
+    border-bottom: 1px solid #313131;
+}
+
+/* ABOUT PAGE */
+.about-hero {
+    background: url(images/about.jpg) no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    border-bottom: 2px solid black;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.about-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-menu-btn {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 13px;
+    width: 250px;
+    height: 17px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.about-menu-btn:hover {
+    transform: scale(1.1);
+}
+
+/* CONTACT PAGE */
+.contact-hero {
+    background: url(images/contact.jpg) no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    opacity: 0.9;
+    border-bottom: 2px solid black;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.hours-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour {
+    margin: 5px;
+}
+
+.location-content {
+    margin-bottom: 10px;
+}
+
+/* MENU PAGE */
+.menu-hero {
+    background: url(images/menu.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    border-bottom: 2px solid black;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.drink-menu, .food-menu {
+    max-width: 414px;
+    width: 414px;
+}
+
+.drink-header {
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+}
+
+p.menu-name {
+    display: inline-block;
+    width: 90%;
+    font-weight: bold;
+    color: #313131;
+}
+
+p.menu-price{
+    display: inline-block;
+    font-weight: bold;
+    color: #313131;
+}
+
+.menu-description {
+    font-style: italic;
+    font-size: 14px;
+    color: #505050;
+    margin-top: 2px;
+    max-width: 85%;
+}
+
+h1.food-header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive Design */
+
+/* Smartphones */
+@media only screen and (max-device-width : 768px) {
+    .hamburger, .blkhamburger {
+        display: block;
+    }
+    .title {
+        font-size: 27px;
+        margin-left: 25px;
+    }
+    .nav-tabs {
+        display: none;
+    }
+    .bodytitle {
+        font-size: 1.8em;
+    }
+    .address {
+        font-size: 1em;
+    }
+    .view-menu {
+        font-size: 0.9em;
+        width: 45vw;
+    }
+    .title-container {
+        justify-content: center;
+    }
+    .about-container {
+        width: 95%;
+    }
+    .drink-menu, .food-menu {
+        width: 85%;
+    }
+    p.menu-name {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-device-width : 320px) {
+    .modal-contents {
+        font-size: 16px;
+    }
+}
+
+/* Ipads */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .nav-tabs {
+        margin-right: 0px !important;
+    }
+}
