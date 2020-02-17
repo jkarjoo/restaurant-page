@@ -280,7 +280,7 @@ body{
 
 /* MENU PAGE */
 .menu-hero {
-    background: url(images/menu.jpg) no-repeat fixed;
+    background: url(images/menu.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
