@@ -260,7 +260,7 @@ body{
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .hours-content {
