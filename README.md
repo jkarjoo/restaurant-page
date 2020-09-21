@@ -16,7 +16,7 @@ This is a page for a Café in London that was dynamically rendered through JavaS
 ## Demo
 
 Here is the working live demo:
-[https://justinkar.github.io/restaurant-page/](https://justinkar.github.io/restaurant-page/).
+[https://jkarjoo.github.io/restaurant-page/](https://jkarjoo.github.io/restaurant-page/).
 
 ## Technologies
 

@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/justinkar/restaurant-page.git"
+    "url": "git+https://github.com/jkarjoo/restaurant-page.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/justinkar/restaurant-page/issues"
+    "url": "https://github.com/jkarjoo/restaurant-page/issues"
   },
-  "homepage": "https://github.com/justinkar/restaurant-page#readme",
+  "homepage": "https://github.com/jkarjoo/restaurant-page#readme",
   "devDependencies": {
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
